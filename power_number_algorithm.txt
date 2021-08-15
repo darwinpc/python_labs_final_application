@@ -1,0 +1,25 @@
+Algoritmo: Elevar un numero a una potencia determinada
+
+
+Proceso ElevarNumeroPotenciaDeterminada
+  Escribir "Ingresa base: "
+  Si base es un numero
+    Hacer
+      Escribir "Ingresa exponente: "
+      Si exponente es un numero
+        Hacer
+          Si exponente <= 0
+            Hacer
+              retornar 1
+          Si exponente % 2 == 0
+            Hacer
+              x = ElevarNumeroPotenciaDeterminada(base, exponente/2)
+              retornar x * x
+          Si no
+            Hacer
+              x = ElevarNumeroPotenciaDeterminada(base, (exponente-1)/2)
+              returnar x * x * base
+      Si no
+        Escribir "Ingresa un numero valido."
+  Si no
+    Escribir "Ingresa un numero valido."

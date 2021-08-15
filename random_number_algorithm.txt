@@ -1,0 +1,46 @@
+Algoritmo:  Generar un numero al azar entre 1 y 100, el usuario tiene 5 intentos para adivinar
+            Dar pistas:
+              Si el numero ingresado es menor al generado al azar, mostrar mensaje: "Mas arriba"
+              Si el numero ingresado es mayor al generado al azar, mostrar mensaje: "Mas abajo"
+
+Proceso GenerarNumeroAleatorio
+  Definir
+    MensajeError = "Ingresa un numero valido."
+    MensajeEntrada = "Ingresa un numero: "
+    MensajeExito = "Felicidades!!! Adivinaste el numero"
+    NumeroAleatorio = [1...100]
+    Contador = 1
+
+  Escribir MensajeEntrada
+  Si NumeroIngresado es un Numero
+    Hacer
+      Si Contador < 5
+        Hacer
+          Si NumeroIngresado == NumeroAleatorio
+            Escribir MensajeExito
+          Si NumeroIngresado > NumeroAleatorio
+            Hacer
+              Escribir "Mas Abajo."
+              Escribir MensajeEntrada
+              Si NumeroIngresado es un Numero
+                Hacer
+                  GenerarNumeroAleatorio(NumeroIngresado, Contador + 1)
+              Si no
+                Hacer
+                  Escribir MensajeError
+                  Fin del Programa
+          Si NumeroIngresado < NumeroAleatorio
+            Hacer
+              Escribir "Mas arriba."
+              Escribir MensajeEntrada
+              Si NumeroIngresado es un Numero
+                Hacer
+                  GenerarNumeroAleatorio(NumeroIngresado, Contador + 1)
+              Si no
+                Hacer
+                  Escribir MensajeError
+                  Fin del Programa
+      Si no
+        Escribir "Perdiste, superaste el limite maximo de intentos (5)"
+  Si no
+    Escribir MensajeError

@@ -1,0 +1,13 @@
+Algoritmo: Imprimir en pantalla la tabla de multiplicar del numero que ingrese el usuario hasta el 10
+
+
+Proceso TablaMultiplicar
+  Definir limite_maximo_multiplo igual a 10
+  Escribir "Ingresa un numero para mostrar su tabla de multiplicar"
+  Leer x
+  Si x es un numero
+    Hacer
+      Para i = 1, 2, ..., limite_maximo_multiplo
+        Escribir x * i = resultado
+  Si no
+    Escribir "Ingresa un numero valido."

@@ -1,0 +1,63 @@
+Algoritmo:  Una tienda de  ropa esta realizando un inentario de almacen y los datos que requiere son el id del articulo y la cantidad exisente.
+
+            Utilizar un arbol binario para ingresar a una estructura dinamica el ID del articulo y la cantidad existente
+
+
+Proceso ArbolBinarioBusqueda
+
+  Definir Menu:
+      1.-Insertar ID Articulo(Nodo)
+      2.-Inorden
+      3.-Preorden
+      4.-Postorden
+      5.-Buscar
+      6.-Salir
+
+  Escribir Menu
+
+  Si OpcionIngresada es un Numero
+    Hacer
+      Si OpcionIngresada es 1
+        Hacer
+          Escribir "Ingresa ID del articulo"
+          Si ID es un Numero
+            Hacer
+              Crear Nodo
+              Escribir "Ingresa cantidad"
+              Si Cantidad es un Numero
+                Asociar Cantidad a Nodo
+
+              Si no
+                Hacer
+                  Escribir "Ingresa solo digitos..."
+          Si no
+            Hacer
+              "Ingresa solo digitos..."
+      Si OpcionIngresada es 2
+        Hacer
+          Imprimir resultado en consola:
+            Cantidad: 
+            Id del Articulo:
+      Si OpcionIngresada es 3
+        Hacer
+          Imprimir arbol binario
+          Ordenar arbol binario
+      Si OpcionIngresada es 4
+        Hacer
+          Ordenar arbol binario
+          Imprimir arbol binario
+      Si OpcionIngresada es 5
+        Hacer
+          Escribir "Ingresa ID a buscar"
+          Si ID es un Numero
+            Hacer
+              Mostrar resultado de busqueda
+          Si no
+            Hacer
+              Escribir "Ingresa solo digitos..."
+      Si OpcionIngresada es 6
+        Hacer
+          Salir
+  Si no
+    Hacer
+      Escribir "Ingresa solo digitos..."
